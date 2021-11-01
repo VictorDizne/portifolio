@@ -4,6 +4,15 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #C9ADA7
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .flag {
   max-height: 300px;
   border: 10px solid #4a4e69;
