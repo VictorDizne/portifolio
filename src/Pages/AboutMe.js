@@ -1,9 +1,12 @@
 import React from 'react';
+import Navbar from '../Components/Navbar';
 
 const AboutMe = () => {
   return (
     <div>
+      <Navbar page="aboutMe" />
       <h3>Sobre Mim:</h3>
+      <div>
       <p>
           Comecei a aprender programação logo cedo, no meu sexto ano do ensino fundamental, pra ser mais exato, onde me juntei a um grupo de colegas e juntos participamos 
           das Olímpiadas de robótica do meu colégio, que consistiam em nós construirmos o hardware e o software de uma maquina que competiria com outras, e foi aí que surgiu 
@@ -20,6 +23,7 @@ const AboutMe = () => {
           encontrei a <a href="https://www.betrybe.com/">Trybe</a>, e junto com eles tenho aprendido muito mais sobre o mundo da programação, tendo múltiplos projetos para 
           comprovar e exemplificar o que eu sei fazer. Além disso, aprendi muitos valores de Soft Skills, como comunicação, escuta ativa e até como trabalhar melhor em grupo.
         </p>
+      </div>
     </div>
   );
 };

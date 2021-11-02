@@ -1,3 +1,4 @@
+/* css para toda a página */
 body {
   background-color: #22223B;
   color: #F2E9E4;
@@ -13,6 +14,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* css feito para landing page */
 .flag {
   max-height: 300px;
   border: 10px solid #4a4e69;
@@ -26,4 +28,77 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content:space-evenly;
+}
+
+/* css feito para a navbar */
+.navbar-container {
+  background-color: #F2E9E4;
+  color: #22223B;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 10%;
+}
+
+.navbar-text {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.navbar-text:hover {
+  cursor: pointer;
+}
+
+.LogoffImg {
+  max-height: 50px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.navbar-side-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* css feito para página Home */
+.home-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  padding: 10px;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.home-container h4 {
+  max-height: 50%;
+  max-width: 50%;
+}
+
+.home-btns-container {
+  flex-grow: 3;
+}
+
+.home-btn {
+  font-size: x-large;
+  text-decoration: solid;
+  background-color: #F2E9E4;
+  color: #22223B;
+  margin: 10px;
+  border: none;
+  border-radius: 3px;
+  width: 50%;
+  height: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background-color: #4a4e69;
+  color: #F2E9E4;
 }
