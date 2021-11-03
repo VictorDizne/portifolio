@@ -4,6 +4,16 @@ import Navbar from '../Components/Navbar';
 
 const MainBR = () => {
   const history = useHistory();
+  
+  function handleClick(pageToRedirect) {
+    if (pageToRedirect === 'about') {
+      history.push('/PT-BR/SobreMim');
+    }
+    if (pageToRedirect === 'projects') {
+      history.push('/PT-BR/Projetos');
+    }
+  }
+
   return (
     <div>
       <Navbar page="home" />
@@ -16,10 +26,10 @@ const MainBR = () => {
           Use os botões ao lado ou a barra de navegação no topo da página para saber mais sobre mim e meus projetos.
         </h4>
         <div className="home-btns-container">
-          <button className="home-btn">
+          <button className="home-btn" onClick={ () => handleClick('about') }>
             Sobre Mim
           </button>
-          <button className="home-btn">
+          <button className="home-btn" onClick={ () => handleClick('projects') }>
             Projetos
           </button>
         </div>
