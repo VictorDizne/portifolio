@@ -36,6 +36,8 @@ const Navbar = ({page}) => {
   function handleLogOff() {
     localStorage.clear();
     history.push('/');
+    window.close();
+    console.log('teste')
   }
 
   return (
@@ -48,12 +50,12 @@ const Navbar = ({page}) => {
         <h2 onClick={() => handleClick(availableLinks[1])} className="navbar-text">
           {availableLinks[1]}
         </h2>
-        <img
+        {/* <img
           onClick={ handleLogOff }
           className="LogoffImg"
           src={Logoff}
           alt="Log Off"
-        />
+        /> */}
       </div>
     </div>
   );

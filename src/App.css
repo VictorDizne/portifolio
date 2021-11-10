@@ -102,3 +102,52 @@ a:hover {
   background-color: #4a4e69;
   color: #F2E9E4;
 }
+
+/* css feito para página de projetos */
+.project-container {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #4a4e69;
+  max-width: 70%;
+  max-height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.project-container img {
+  border-radius: 10px;
+  max-width: 20%;
+}
+
+.project-container-text {
+  max-width: 40%;
+  margin-top: 30px;
+}
+
+.project-container-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container-buttons button {
+  width: 95%;
+  height: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: large;
+  text-decoration: solid;
+  background-color: #F2E9E4;
+  color: #22223B;
+  border: none;
+  border-radius: 3px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.project-container-buttons button:hover {
+  background-color: #22223B;
+  color: #F2E9E4;
+}
