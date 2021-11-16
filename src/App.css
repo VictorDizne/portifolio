@@ -93,7 +93,7 @@ a:hover {
   border: none;
   border-radius: 3px;
   width: 50%;
-  height: 50%;
+  height: 30%;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -150,4 +150,22 @@ a:hover {
 .project-container-buttons button:hover {
   background-color: #22223B;
   color: #F2E9E4;
+}
+
+/* css feito para a página sobre mim */
+.img-about-me {
+  border: 10px solid #4a4e69;
+  max-width: 75%;
+}
+
+.about-me-text {
+  max-width: 60%;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3%;
 }
