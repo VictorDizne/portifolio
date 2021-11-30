@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import recipesApp from '../Images/recipesApp.png';
+import starWarsApp from '../Images/starWarsApp.png';
 import { useHistory } from 'react-router';
 
 const Projects = () => {
@@ -14,6 +15,12 @@ const Projects = () => {
     }
     if (page === 'repRecipes') {
       return window.open('https://github.com/VictorDizne/sd-013-a-project-recipes-app/tree/master/src', '_blank');
+    }
+    if (page === 'deployStarWars') {
+      return window.open('https://sd-013-a-project-starwars-planets-search.vercel.app/', '_blank');
+    }
+    if (page === 'repStarWars') {
+      return window.open('https://github.com/VictorDizne/sd-013-a-project-starwars-planets-search/tree/master/src', '_blank');
     }
   }
 
@@ -32,6 +39,19 @@ const Projects = () => {
           <div className="project-container-buttons">
             <button onClick={ () => handleClick('deployRecipes') }>Visite o deploy</button>
             <button onClick={ () => handleClick('repRecipes') }>Confira o repositório</button>
+          </div>
+        </div>
+        <div className="project-container">
+          <img src={ starWarsApp } alt="Foto da aplicação"/>
+          <div className="project-container-text">
+            <h3>Projeto Star Wars Planet Search</h3>
+            <p>Esse foi o projeto feito após eu aprender Hooks e Context. Apesar de ser uma aplicação simples, o desafio aqui era manter todas as informações necessarias usando apenas um fetch, assim, após a primeira carregada do site, mesmo se sua conexão cair ele vai continuar 100% funcional.
+            </p>
+            <p>Usando o Context para gerenciar o estado global e Hooks para atualizar esse Context, essa aplicação filtra de acordo com a escolha do usuário a tabela de planetas que vem de uma API externa, o filtro funciona rapidamente e o site é responsivo graças a existir apenas um fetch</p>
+          </div>
+          <div className="project-container-buttons">
+            <button onClick={ () => handleClick('deployStarWars') }>Visite o deploy</button>
+            <button onClick={ () => handleClick('repStarWars') }>Confira o repositório</button>
           </div>
         </div>
       </div>
