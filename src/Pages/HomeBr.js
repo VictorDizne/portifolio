@@ -23,7 +23,7 @@ const MainBR = () => {
           estudando Back-end para me tornar um desenvolvedor Full Stack, e busco emprego na área de desenvolvimento de software.
           <br />
           <br />
-          Use os botões ao lado ou a barra de navegação no topo da página para saber mais sobre mim e meus projetos.
+          Use os botões ou a barra de navegação no topo da página para saber mais sobre mim e meus projetos.
         </h4>
         <div className="home-btns-container">
           <button className="home-btn" onClick={ () => handleClick('about') }>
