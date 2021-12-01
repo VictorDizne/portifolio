@@ -45,13 +45,19 @@ const Navbar = ({page}) => {
   if (screen.width < 1024) {
     return (
       <div className="navbar-container">
+        <div>
           <h2  onClick={() => handleClick(availableLinks[0])} className="navbar-text">
             {availableLinks[0]}
           </h2>
+        </div>
+        <div>
           <h2 className="navbar-text">{availableLinks[2]}</h2>
+        </div>
+        <div>
           <h2 onClick={() => handleClick(availableLinks[1])} className="navbar-text">
             {availableLinks[1]}
           </h2>
+        </div>
           {/* <img
             onClick={ handleLogOff }
             className="LogoffImg"
