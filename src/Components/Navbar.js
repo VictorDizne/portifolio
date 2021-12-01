@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import React, { useState, useEffect } from 'react';
 import Logoff from '../Images/Logoff.png';
 import { useHistory } from 'react-router';
@@ -33,16 +34,37 @@ const Navbar = ({page}) => {
     }
   }
 
-  function handleLogOff() {
-    localStorage.clear();
-    history.push('/');
-    window.close();
-    console.log('teste')
-  }
+  // function handleLogOff() {
+  //   localStorage.clear();
+  //   history.push('/');
+  //   window.close();
+  //   console.log('teste')
+  // }
+
+
+  if (screen.width < 1024) {
+    return (
+      <div className="navbar-container">
+          <h2  onClick={() => handleClick(availableLinks[0])} className="navbar-text">
+            {availableLinks[0]}
+          </h2>
+          <h2 className="navbar-text">{availableLinks[2]}</h2>
+          <h2 onClick={() => handleClick(availableLinks[1])} className="navbar-text">
+            {availableLinks[1]}
+          </h2>
+          {/* <img
+            onClick={ handleLogOff }
+            className="LogoffImg"
+            src={Logoff}
+            alt="Log Off"
+          /> */}
+      </div>
+    );
+  };
 
   return (
     <div className="navbar-container">
-      <h2>{availableLinks[2]}</h2>
+      <h2 className="navbar-text">{availableLinks[2]}</h2>
       <div className="navbar-side-container">
         <h2  onClick={() => handleClick(availableLinks[0])} className="navbar-text">
           {availableLinks[0]}
@@ -60,5 +82,7 @@ const Navbar = ({page}) => {
     </div>
   );
 };
+
+ 
 
 export default Navbar;

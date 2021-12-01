@@ -6,8 +6,8 @@ const AboutMe = () => {
   return (
     <div>
       <Navbar page="aboutMe" />
-      <h1>Sobre Mim:</h1>
       <div className="about-me-container">
+        <h1>Sobre Mim:</h1>
         <div>
           <img className="img-about-me" alt="Minha foto" src={ euTrybe }/>
         </div>
